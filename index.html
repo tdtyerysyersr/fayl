@@ -8,14 +8,19 @@
 </head>
 <body>
    <div>
+    <p></p>
     <input type="number" id="som1"><br><br>
+    
     <input type="number" id="son2"><br><br>
-    <button>+</button>
+   <div class="container">
+     <button>+</button>
     <button id="buuton1">-</button>
     <button id="bpl">*</button>
     <button id="kopaytir">/</button>
+   </div>
     
     <h1>NATIJA:</h1><br><br><br><br>
+    
    </div>
     
     <script>
@@ -25,8 +30,11 @@
         const h=document.querySelector('h1')
         const ut2=document.getElementById('buuton1')
         but.addEventListener('click',() =>{
+            
             const son=parseFloat(son1.value)
             const son22=parseFloat(son2.value)
+            if(son.value==='')
+            document.querySelector('p').textContent='iltimos son kiriting'
             natija=(son+son22);
             h.innerHTML=` ${son} ni ${son22} qoshsak ${natija}`;
         })
@@ -48,7 +56,9 @@
             natija=(son/son22);
             h.innerHTML=` ${son} ni ${son22} bolsak  ${natija}`
         })
-       
+       setTimeout(() => {
+        document.querySelector('p').textContent='abdullo abduqodirov'
+       }, 5000);
     </script>
 </body>
 </html>

@@ -12,3 +12,35 @@ div{
     margin-left: 40%;
     margin-top: 200px;
 }
+
+
+@media(max-width:578px){
+    input{
+        position: relative;
+        right: 30%;
+        align-items: center;}
+        button{
+        position: relative;
+        right: 70%;
+        width: 100px;
+        height: 40px;
+        }
+        .container{
+            
+        display: flex;
+        gap: 30px
+        }
+    h1{
+        position: relative;
+        right:30px ;
+        
+    }
+    p{
+        
+        position: relative;
+        text-align: start;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+}
