@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div>
+    <input type="number" id="som1"><br><br>
+    <input type="number" id="son2"><br><br>
+    <button>+</button>
+    <button id="buuton1">-</button>
+    <button id="bpl">*</button>
+    <button id="kopaytir">/</button>
+    
+    <h1>NATIJA:</h1><br><br><br><br>
+   </div>
+    
+    <script>
+        const son1=document.getElementById('som1')
+        const son2=document.getElementById('son2')
+        const but=document.querySelector('button')
+        const h=document.querySelector('h1')
+        const ut2=document.getElementById('buuton1')
+        but.addEventListener('click',() =>{
+            const son=parseFloat(son1.value)
+            const son22=parseFloat(son2.value)
+            natija=(son+son22);
+            h.innerHTML=` ${son} ni ${son22} qoshsak ${natija}`;
+        })
+        ut2.addEventListener('click',()=>{
+            const son=parseFloat(son1.value)
+            const son22=parseFloat(son2.value)
+            natija=(son-son22);
+            h.innerHTML=` ${son} ni ${son22} ayirsa ${natija}`
+        })
+       bpl.addEventListener('click',()=>{
+            const son=parseFloat(son1.value)
+            const son22=parseFloat(son2.value)
+            natija=(son*son22);
+            h.innerHTML=` ${son} ni ${son22} kopaytirsa  ${natija}`
+        })
+        kopaytir.addEventListener('click',()=>{
+            const son=parseFloat(son1.value)
+            const son22=parseFloat(son2.value)
+            natija=(son/son22);
+            h.innerHTML=` ${son} ni ${son22} bolsak  ${natija}`
+        })
+       
+    </script>
+</body>
+</html>
